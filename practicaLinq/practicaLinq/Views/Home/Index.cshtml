@@ -1,0 +1,122 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+
+    <div class="row">
+        <h3>Operaciones Lamda</h3>
+    </div>
+
+    <div class="row">
+        <p>El cuadrado de 5 es: @ViewBag.cuadrado</p>
+        <p>La raiz de 5 es: @ViewBag.raiz</p>
+        <p>La raiz de 10 es: @ViewBag.raizBloque</p>
+        <p>La Suma de 10+10 es: @ViewBag.suma</p>
+        <p>La Suma de 20+20 es: @ViewBag.sumaBloque</p>
+        <p>La cuadratica de a=1;b=2,c=-15 es: @ViewBag.cuadratica</p>
+    </div>
+
+    <div class="row">
+
+        <h3>Productos en stock con Linq</h3>
+        <table class="table table-hover">
+            <thead>
+            <th>Name</th>
+            <th>Precio Unitario</th>
+            </thead>
+            <tbody>
+                @foreach (Product item in ViewBag.ceroStock)
+                {<tr>
+                 <td>@item.ProductName</td>
+                <td>@item.UnitPrice</td>
+                  </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="row">
+
+        <h3>Productos en stock con Linq mayores a 100 dolares</h3>
+        <table class="table table-hover">
+            <thead>
+            <th>Name</th>
+            <th>Precio Unitario</th>
+            </thead>
+            <tbody>
+                @foreach (Product item in ViewBag.cienStock)
+                {
+                    <tr>
+                        <td>@item.ProductName</td>
+                        <td>@item.UnitPrice</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <div class="row">
+        <h2> FORMA 2</h2>
+        <h3>Productos en stock con Linq mayores a 100 dolares</h3>
+        <table class="table table-hover">
+            <thead>
+            <th>Name</th>
+            <th>Precio Unitario</th>
+            </thead>
+            <tbody>
+                @foreach (Product item in ViewBag.cienStock2)
+                {
+                    <tr>
+                        <td>@item.ProductName</td>
+                        <td>@item.UnitPrice</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="row">
+        <h2>Inner join en LINQ</h2>
+        <h3>Productos en stock con Linq con nombre de proveedores</h3>
+        <table class="table table-hover">
+            <thead>
+            <th>Name</th>
+            <th>Precio Unitario</th>
+            <th>Nombre Proovedor</th>
+            </thead>
+            <tbody>
+                @foreach (var item in ViewBag.queryProveedores)
+                {
+                    <tr>
+                        <td>@item.ProductName</td>
+                        <td>@item.UnitPrice</td>
+                        <td>@item.CompanyName</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+         <div class="ROW">
+             <h3 class="text-center">list view productos</h3>
+             <label for="ice-cream-choice">Productos</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
+
+<datalist id="ice-cream-flavors">
+            @foreach (Product item in ViewBag.productos)
+            {
+                <option value="@item.ProductName" />
+                <option value="@item.ProductId" />
+            }
+
+</datalist>
+
+        </div>
+
+</div>
+
