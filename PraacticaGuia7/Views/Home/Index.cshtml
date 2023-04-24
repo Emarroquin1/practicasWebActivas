@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+
+ 
+    <div class="row">
+
+        <h3>Producto más vendidos</h3>
+        @{
+            var productoMasVendido = ViewBag.ProductoMasVendido;
+        }
+        @if (productoMasVendido != null)
+        {
+            <p>Nombre del producto: @productoMasVendido.NombreProducto</p>
+            <p>Cantidad de ventas: @productoMasVendido.CantidadVentas</p>
+        }
+      
+  
+
+    </div>
+
+
+    <div class="row">
+        <h3>TOP 5 Productos mas baratos</h3>
+        <table class="table table-hover">
+            <thead>
+            <th>Name</th>
+            <th>Precio Unitario</th>
+   
+            </thead>
+            <tbody>
+                @foreach (var item in ViewBag.topProductosBaratos)
+                {
+                    <tr>
+                        <td>@item.ProductName</td>
+                        <td>@item.UnitPrice</td>
+   
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="row">
+        <h3>Solo productos que son bebidas</h3>
+     
+        <table class="table table-hover">
+            <thead>
+            <th>Name</th>
+            <th>Precio Unitario</th>
+            <th>Categoria</th>
+                @{
+                    var productosBebidas = ViewBag.ProductosBebidas;
+                }
+
+            </thead>
+            <tbody>
+                @foreach (var item in productosBebidas)
+                {
+                    <tr>
+                        <td>@item.ProductName</td>
+                        <td>@item.UnitPrice$</td>
+                        <td>@item.Categoria</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+    <div class="row">
+        <h3>Solo productos que son provistos por "Paris"</h3>
+
+        <table class="table table-hover">
+            <thead>
+            <th>Name</th>
+            <th>Precio Unitario</th>
+            <th>Region</th>
+                @{
+                    var productosParis = ViewBag.productosParis;
+                }
+
+            </thead>
+            <tbody>
+                @foreach (var item in productosParis)
+                {
+                    <tr>
+                        <td>@item.ProductName</td>
+                        <td>@item.UnitPrice</td>
+                        <td>@item.Supplier</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+
+
+</div>
