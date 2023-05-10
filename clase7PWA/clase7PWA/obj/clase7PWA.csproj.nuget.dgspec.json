@@ -10,11 +10,11 @@
         "projectUniqueName": "D:\\proyectos\\practicasWebActivas\\clase7PWA\\clase7PWA\\clase7PWA.csproj",
         "projectName": "clase7PWA",
         "projectPath": "D:\\proyectos\\practicasWebActivas\\clase7PWA\\clase7PWA\\clase7PWA.csproj",
-        "packagesPath": "C:\\Users\\erick\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Erick\\.nuget\\packages\\",
         "outputPath": "D:\\proyectos\\practicasWebActivas\\clase7PWA\\clase7PWA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\erick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Erick\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

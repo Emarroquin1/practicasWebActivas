@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WEB ACTIVAS\\Proyecto\\practicaLinq\\practicaLinq\\practicaLinq.csproj": {}
+    "D:\\proyectos\\practicasWebActivas\\practicaLinq\\practicaLinq\\practicaLinq.csproj": {}
   },
   "projects": {
-    "D:\\WEB ACTIVAS\\Proyecto\\practicaLinq\\practicaLinq\\practicaLinq.csproj": {
+    "D:\\proyectos\\practicasWebActivas\\practicaLinq\\practicaLinq\\practicaLinq.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WEB ACTIVAS\\Proyecto\\practicaLinq\\practicaLinq\\practicaLinq.csproj",
+        "projectUniqueName": "D:\\proyectos\\practicasWebActivas\\practicaLinq\\practicaLinq\\practicaLinq.csproj",
         "projectName": "practicaLinq",
-        "projectPath": "D:\\WEB ACTIVAS\\Proyecto\\practicaLinq\\practicaLinq\\practicaLinq.csproj",
-        "packagesPath": "C:\\Users\\erick\\.nuget\\packages\\",
-        "outputPath": "D:\\WEB ACTIVAS\\Proyecto\\practicaLinq\\practicaLinq\\obj\\",
+        "projectPath": "D:\\proyectos\\practicasWebActivas\\practicaLinq\\practicaLinq\\practicaLinq.csproj",
+        "packagesPath": "C:\\Users\\Erick\\.nuget\\packages\\",
+        "outputPath": "D:\\proyectos\\practicasWebActivas\\practicaLinq\\practicaLinq\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\erick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Erick\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
